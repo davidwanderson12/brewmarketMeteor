@@ -1,0 +1,13 @@
+<template name="modalItem">
+    <div class="modal fade" id="itemModal">
+        <div class="modal-dialog">
+            {{#with modalInfo}}
+                {{#if isBeer}}
+                    {{> modalBeer}}
+                {{else}}
+                    {{> modalBrewery}}
+                {{/if}}
+            {{/with}}
+        </div>
+    </div>
+</template>

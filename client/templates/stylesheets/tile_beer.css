@@ -1,0 +1,25 @@
+
+.beer-tile{
+    height:230px;
+    min-height:200px;
+    margin-bottom:15px;
+}
+
+.beer-tile-header{
+    background-color: #333;
+    color:white;
+    padding:4px;
+}
+
+.beer-tile-name{
+    font-size:10px;
+}
+
+.beer-tile-stats{
+    font-size:10px;
+}
+
+.beer-tile-img{
+    background-color: #333;
+    padding:4px;
+}

@@ -1,0 +1,22 @@
+<template name="breweryTile">
+    <div class="brewery-tile col-xs-4">
+        <div class="brewery-tile-header">
+            <div class="row">
+                <div class="brewery-name col-xs-12">
+                    {{Name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="brewery-tile-logo pull-right col-xs-2">
+                    <img class="img-responsive" src="images/{{LogoImg}}.jpg">
+                </div>
+                <div class="brewery-tile-location pull-right col-xs-6">
+                    {{AddressCity}}, {{AddressState}}
+                </div>
+            </div>
+        </div>
+        <div class="brewery-tile-img">
+            <img class="img-responsive" src="images/{{TileImg}}.jpg">
+        </div>
+    </div>
+</template>

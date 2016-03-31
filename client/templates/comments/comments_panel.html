@@ -1,0 +1,16 @@
+<template name="commentsPanel">
+    <div id="comment-well">
+        {{#if currentUser}}
+            <form name="commentForm">
+                <textarea name="body" class="newComment"></textarea>
+                <button class="postComment pull-right">Post</button>
+            </form>
+        {{else}}
+            <div>Log In to post comment</div>
+        {{/if}}
+        {{#each comment}}
+            {{> commentItem}}
+        {{/each}}
+    </div>
+
+</template>

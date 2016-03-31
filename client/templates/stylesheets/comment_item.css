@@ -1,0 +1,38 @@
+.comment-item{
+    margin-left:4%;
+    margin-bottom:5px;
+    border-top:2px solid #646b7d;
+    min-height:60px;
+}
+
+.comment-image{
+    display:inline-block;
+    height:60px;
+    width:60px;
+    vertical-align: top;
+}
+.comment-content{
+    display:inline-block;
+    min-height:60px;
+    width: calc(100% - 65px);
+}
+
+.comment-body{
+    min-height:60px;
+}
+
+
+.newComment{
+    margin-left:3%;
+    width:90%;
+}
+
+.postComment{
+    color:black;
+}
+
+.submittedDate{
+    font-size: 11px;
+    color:lightgrey;
+    float: right;
+}

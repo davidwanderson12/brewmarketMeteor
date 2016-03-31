@@ -1,0 +1,24 @@
+.brewery-tile{
+    height:230px;
+    margin-bottom:15px;
+}
+
+.brewery-tile-header{
+    background-color: #333;
+    color:white;
+    padding:4px;
+}
+
+.brewery-tile-img{
+    background-color: #333;
+    padding:4px;
+}
+
+.brewery-tile-logo{
+
+}
+
+.brewery-tile-location{
+    font-size:10px;
+    text-align: right;
+}

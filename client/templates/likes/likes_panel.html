@@ -1,0 +1,11 @@
+<template name="likesPanel">
+    {{#if currentUser}}
+        {{#unless userLiked}}
+            <button id="like" class="btn btn-info pull-right">Like</button>
+        {{else}}
+            <button id="unlike" class="btn btn-danger pull-right">Unlike</button>
+        {{/unless}}
+    {{/if}}
+    Likes: {{totalLikes}}
+    {{> likeMap}}
+</template>

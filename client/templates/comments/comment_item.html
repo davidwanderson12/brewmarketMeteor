@@ -1,0 +1,35 @@
+<template name="commentItem">
+    <div class="comment-item">
+        <div class="comment-image">
+            {{#if profileImage}}
+                <img src="images/{{profileImage}}.jpg">
+            {{else}}
+                <img src="images/profile0.jpg">
+            {{/if}}
+        </div>
+
+        <div class="comment-content">
+            <div class="comment-body">
+                <div>
+                    <span>{{parentId}} -- {{_id}}</span>
+                    <span class="submittedDate pull-right">{{formatDate submitted}}</span>
+                    <div>{{body}}</div>
+                </div>
+                {{#if currentUser}}
+                    <div class="commentReply">Reply</div>
+                {{/if}}
+            </div>
+        </div>
+        <div>
+            {{#each subComment}}
+                {{> commentItem}}
+            {{/each}}
+            {{#if leavingReply}}
+                <form name="commentForm">
+                    <textarea name="body" class="newComment"></textarea>
+                    <button class="postComment pull-right">Post</button>
+                </form>
+            {{/if}}
+        </div>
+    </div>
+</template>

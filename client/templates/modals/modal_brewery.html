@@ -1,0 +1,71 @@
+<template name="modalBrewery">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">{{Name}} -- {{_id}}<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></h4>
+
+        </div>
+
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="modal-well">
+                        <img class="img-responsive" src="images/{{LogoImg}}.jpg">
+                    </div>
+
+                    <div class="modal-well">
+                        <div class="row">
+                            <div class="col-xs-offset-2 col-xs-6">
+                                {{AddressStreet1}} <br>
+                                {{AddressCity}}, {{AddressState}}
+                            </div>
+                            <div class="col-xs-4">
+                                <img class="img-responsive" src="images/{{LogoImg}}.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>Social Media Links</div>
+                        </div>
+                    </div>
+                    <div class="modal-well">
+                        <div class="modal-details-header">WHO LIKES THIS BREWER?</div>
+                        {{> likesPanel}}
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="modal-well">
+                        <div class="modal-details-header">ABOUT {{uppercase Name}}</div>
+                        <div>{{Description}}</div>
+                    </div>
+
+                    <div class="modal-well">
+                        <div class="modal-details-header">PROPOSED PICOPAKS</div>
+                        <div class="row">
+                            {{#each picoPaks}}
+                                {{> beerTileModal}}
+                            {{/each}}
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <p class="small">Click a PicoPak tile to view beer details and vote for the Kickstarter Bonus PicoPak.</p>
+                                <p class="small">If you think a different beer from this brewer would be the perfect Kickstarter Bonus PicoPak, click and vote for the <strong>Any Other Beer</strong> PicoPak.</p>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 legalese">
+                                <em>
+                                    This list of proposed PicoPaks is neither complete nor final, and subject to change. Bad Jimmy's Brewing reserves the right to modify beer selection and/or final specification before release.
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-well">
+                        <div class="modal-details-header">COMMENTS</div>
+                        <div>
+                            {{> commentsPanel}}
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

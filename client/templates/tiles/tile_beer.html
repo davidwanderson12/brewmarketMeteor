@@ -1,0 +1,25 @@
+<template name="beerTile">
+        <div class="beer-tile-header">
+            <div class="row">
+                <div class="beer-name col-xs-12">
+                    {{Name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="beer-tile-location col-xs-8">
+                    <div class="row beer-tile-name">
+                        <div class="col-xs-12">{{Style}}</div>
+                    </div>
+                    <div class="row beer-tile-stats">
+                        <div class="col-xs-12">ABV {{ABV}}% IBU {{IBU}}</div>
+                    </div>
+                </div>
+                <div class="beer-tile-logo pull-right col-xs-4">
+                    <img class="img-responsive" src="images/{{LogoImg}}.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="beer-tile-img">
+            <img class="img-responsive" src="images/{{TileImg}}.jpg">
+        </div>
+</template>

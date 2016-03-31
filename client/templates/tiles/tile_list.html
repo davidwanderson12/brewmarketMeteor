@@ -1,0 +1,20 @@
+<template name="tileList">
+    {{> modalItem}}
+    <div class="container">
+        <div class="row">
+            {{#each marketList}}
+                {{#if isBeer}}
+                    {{> beerTileMain}}
+                {{else}}
+                    {{> breweryTile}}
+                {{/if}}
+            {{/each}}
+            <!--{{#each beers}}-->
+                <!--{{> beerTileMain}}-->
+            <!--{{/each}}-->
+            <!--{{#each breweries}}-->
+                <!--{{> breweryTile}}-->
+            <!--{{/each}}-->
+        </div>
+    </div>
+</template>
